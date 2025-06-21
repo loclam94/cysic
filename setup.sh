@@ -1,11 +1,15 @@
 #!/bin/bash
 
-rm -rf ~/cysic-verifier
+
+rm -rf cysic-verifier
 cd ~
 
 git clone https://github.com/ReJumpLabs/cysic-verifier.git
 
-curl -L https://github.com/cysic-labs/cysic-phase3/releases/download/v1.0.0/verifier_linux > cysic-verifier/verifier
+curl -L https://github.com/cysic-labs/cysic-phase3/releases/download/v1.0.0/verifier_linux > ~/cysic-verifier/verifier
+curl -L https://github.com/cysic-labs/cysic-phase3/releases/download/v1.0.0/libdarwin_verifier.so > ~/cysic-verifier/libdarwin_verifier.so
+curl -L https://github.com/cysic-labs/cysic-phase3/releases/download/v1.0.0/librsp.so >~/cysic-verifier/librsp.so
+
 
 cd cysic-verifier
 
