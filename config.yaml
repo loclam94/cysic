@@ -14,3 +14,4 @@ claim_reward_address: "0x..."
 server:
   # don't modify this
   cysic_endpoint: "https://ws-pre.prover.xyz"
+  verify_endpoint: "http://verifier-rpc.prover.xyz:50052"
