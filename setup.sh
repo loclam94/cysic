@@ -32,7 +32,7 @@ while IFS= read -r evm_address || [ -n "$evm_address" ]; do
   verifier_instance_$i:
     build: .
     environment:
-      - CHAIN_ID: "cysicmint_9001-1"
+      - CHAIN_ID:534352
     volumes:
       - ./data/cysic/keys:/.cysic/keys
       - ./data/scroll_prover:/.scroll_prover
