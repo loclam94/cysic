@@ -2,7 +2,6 @@
 
 
 rm -rf ~/cysic-verifier
-rm -rf cysic
 cd ~
 
 git clone https://github.com/loclam94/cysic.git
