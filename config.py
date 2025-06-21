@@ -33,6 +33,7 @@ claim_reward_address: "{claim_reward_address}"
 server:
   # don't modify this
   cysic_endpoint: "https://ws-pre.prover.xyz"
+  verify_endpoint: "http://verifier-rpc.prover.xyz:50052"
 """
 
 # Remove existing directories if they exist
