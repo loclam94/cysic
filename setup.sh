@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-rm -rf cysic-verifier
+rm -rf ~/cysic-verifier
 rm -rf cysic
 cd ~
 
