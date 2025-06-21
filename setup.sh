@@ -1,15 +1,13 @@
 #!/bin/bash
 
-
 rm -rf ~/cysic-verifier
 cd ~
 
-git clone https://github.com/loclam94/cysic.git
+git clone https://github.com/loclam94/cysic.git cysic-verifier
 
 curl -L https://github.com/cysic-labs/cysic-phase3/releases/download/v1.0.0/verifier_linux > ~/cysic-verifier/verifier
 curl -L https://github.com/cysic-labs/cysic-phase3/releases/download/v1.0.0/libdarwin_verifier.so > ~/cysic-verifier/libdarwin_verifier.so
 curl -L https://github.com/cysic-labs/cysic-phase3/releases/download/v1.0.0/librsp.so >~/cysic-verifier/librsp.so
-
 
 cd cysic-verifier
 
@@ -36,10 +34,10 @@ while IFS= read -r evm_address || [ -n "$evm_address" ]; do
   verifier_instance_$i:
     build: .
     environment:
-      - CHAIN_ID:534352
+      - CHAIN_ID=534352
     volumes:
-      - ./data/cysic/keys:/.cysic/keys
-      - ./data/scroll_prover:/.scroll_prover
+      - ./data/cysic/keys:/root/.cysic/keys
+      - ./data/scroll_prover:/root/.scroll_prover
     network_mode: "host"
     restart: unless-stopped
     logging:
