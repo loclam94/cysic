@@ -3,7 +3,7 @@
 rm -rf ~/cysic-verifier
 cd ~
 
-git clone https://github.com/ReJumpLabs/cysic.git
+git clone https://github.com/ReJumpLabs/cysic-verifier.git
 
 curl -L https://github.com/cysic-labs/cysic-phase3/releases/download/v1.0.0/verifier_linux > cysic-verifier/verifier
 
